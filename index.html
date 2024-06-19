@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylos.css">
+</head>
+
+<body>
+  <div class="contenedor">
+    <h3>Informacion del usuario</h3>
+    <form action="">
+      <div class="datos">
+        <label name="name">Nombre del cliente:</label><br>
+        <input type="text" class="name" required placeholder="escriba su nombre" min="3" maxlength="20"
+          pattern="[a-z A-Z]+">
+        <input type="text" class="name" required placeholder="escriba sus apellidos" min="3" maxlength="20"
+          pattern="[a-z A-Z]+"><br>
+
+        <label name="cedula">tipo de identificacion:</label><br>
+
+        <select class="tipo" name="tipo" id="identificacion" required>
+          <option value="1">TI</option>
+          <option value="2" selected>CC</option>
+          <option value="3">CE</option>
+
+          <input class="tipo" type="number" required placeholder="escriba su numero de cedula">
+        </select><br>
+
+        <label name="">Tipo de Solicitante</label><br>
+        <select class="tipo" name="nombre" id="Tipo de solicitante" required>
+          <option value="1">01-Aprendiz</option>
+          <option value="2">02-Acudiente</option>
+          <option value="3" selected>03-Docente</option>
+        </select>
+
+
+        <input class="tipo" type="email" required placeholder="escriba su correo">
+      </div>
+
+      <h3>Informacion de Contacto</h3>
+      <div class="contacto">
+        <label name="pais">Pais:</label><br>
+        <input class="tipo" type="text" required placeholder="escriba su pais de origen">
+
+        <input class="tipo" type="text" pattern="[a-z A-Z]+" placeholder="escriba su departamento" required>
+      </div>
+      <div>
+        <label nome="ciudad">Ciudad: </label><br>
+        <input class="tipo" type="text" placeholder="escriba su ciudad" pattern="[a-z A-Z]+" required>
+
+
+        <input class="tipo" type="tel" required name="telefono" id="telefono" placeholder="direccion">
+
+        <label nome="ciudad">telefono: </label><br>
+        <input class="tipo" type="tel" name="celular" id="celular" required placeholder="escriba su celular">
+        <input class="tipo" type="tel" name="celular" id="celular" required placeholder="escriba su telefono">
+      </div><br>
+      <div>
+        <label name="contacto">Medio de Contacto preferido:</label><br>
+        <select name="contacto" id="preferido">
+          <option value="">seleccione su preferencia</option>
+          <option value="1" selected>correo escrito</option>
+          <option value="2">correo electronico</option>
+          <option value="3">mensaje de whasat</option>
+        </select>
+        <label name="direccion">Direccion</label>
+        <input type="text" placeholder="escriba su direccion de residencia" required>
+      </div>
+
+      <h3>Informacion de solicitud</h3>
+      <div class="solicitud">
+        <label name="fecha">Fecha de vencimiento</label><br>
+        <input class="tipo" type="date" required>
+      </div>
+      <div>
+        <label asunto="asunto">asunto</label><br>
+        <input class="tipo" type="text" placeholder="escriba el nombre del asunto" required>
+      </div>
+      <div>
+
+        <textarea class="queja" id="" cols="30" rows="10" minlength="20" maxlength="500"
+          placeholder="escriba su queja o peticin" required></textarea>
+      </div>
+
+      <div>
+        <label name="imagen">Adjunto:</label>
+        <input type="file" accept=".png .jpg" multiple required>
+      </div>
+      <button class="button">enviar</button>
+    </form>
+  </div>
+</body>
+
+</html>
